@@ -17,30 +17,32 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var lbl: UILabel!
     
     @IBOutlet weak var startButton: UIButton!
+    //Timer
     var minutes: Int = 0
     var seconds: Int = 0
     var fractions: Int = 0
+    var minutesArr = [Int]()
+    var secondsArr = [Int]()
+    var fractionsArr = [Int]()
+    
+    //Scramble
     var randomNumber:UInt32 = 0
     var scrambleOutput: String = ""
     var length: Int = 20
     var advice: String = ""
     var scrambleArr = ["R","R'","L","L'","F","F'","U","U'","B","B'","D","D'"]
-    var timeArr = [String]()
-    var minutesArr = [Int]()
-    var secondsArr = [Int]()
-    var fractionsArr = [Int]()
-    var minutesSum: Int = 0
-    var secondsSum: Int = 0
-    var fractionsSum: Int = 0
-    var allSum: Int = 0
+   
+    //Play time
     var playTime: Int = 0
+    
+    //Best Time and Worst Time
     var bestTimeString: String = "No time"
     var worstTimeString: String = "No time"
     var bestTimeCompare: Int = 0
     var worstTimeCompare: Int = 0
     var worstTimeBegin: Int = 0
     var bestTimeBegin: Int = 999999
-    //var averageSum: Int
+    
     var stopwatchString: String = ""
     var round = true
     var timer = Timer()
@@ -86,7 +88,6 @@ class TimerViewController: UIViewController {
         let minutesString = minutes > 9 ? "\(minutes)" : "0\(minutes)"
         
         stopwatchString = "\(minutesString) : \(secondsString) : \(fractionsString)"
-        timeArr.append(stopwatchString)
         minutesArr.append(minutes)
         secondsArr.append(seconds)
         fractionsArr.append(fractions)
@@ -129,22 +130,10 @@ class TimerViewController: UIViewController {
             worstTimeBegin = worstTimeCompare
         }
     }
-//    func averageTime() -> String{
-//        for index in 0...minutesArr.count{
-//            minutesSum += minutesArr[index]
-//            secondsSum += secondsArr[index]
-//            fractionsSum += fractionsArr[index]
-//        }
-//        minutesSum *= 10000
-//        secondsSum *= 100
-//        allSum = minutesSum + secondsSum + fractionsSum
-//        averageSum = allSum / minutesArr.count
-//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         scramble(length: length)
-        //scrambleText.text = String(ins)
         
     }
 
