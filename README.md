@@ -1,2 +1,7 @@
 # Cubetrainer
-Rubik's cube timer on IOS application
+Rubik's cube trainer on IOS application
+feature includes
+-Timer
+-Tips and tricks
+-Rubik's cube notation
+-Vocabulary (Rubik's cube terms)
