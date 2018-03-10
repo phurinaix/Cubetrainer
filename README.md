@@ -5,3 +5,4 @@ feature includes
 -Tips and tricks
 -Rubik's cube notation
 -Vocabulary (Rubik's cube terms)
+-Theme
