@@ -1,11 +1,3 @@
-//
-//  SettingsViewController.swift
-//  CubeTrainer
-//
-//  Created by user on 20/12/2560 BE.
-//  Copyright © 2560 ANT. All rights reserved.
-//
-
 import UIKit
 var isOn = true
 
@@ -14,7 +6,6 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var general: UILabel!
     @IBOutlet weak var switchButton: UISwitch!
     @IBOutlet weak var inspecLbl: UILabel!
-    
     
     @IBAction func theme(_ sender: UISwitch) {
         UserDefaults.standard.set(sender.isOn, forKey: "switchState")
@@ -68,11 +59,9 @@ class SettingsViewController: UIViewController {
         if (cString.hasPrefix("#")) {
             cString.remove(at: cString.startIndex)
         }
-        
         if ((cString.characters.count) != 6) {
             return UIColor.gray
         }
-        
         var rgbValue:UInt32 = 0
         Scanner(string: cString).scanHexInt32(&rgbValue)
         
@@ -83,15 +72,4 @@ class SettingsViewController: UIViewController {
             alpha: CGFloat(1.0)
         )
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
