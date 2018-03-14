@@ -1,11 +1,3 @@
-//
-//  TimerViewController.swift
-//  CubeTrainer
-//
-//  Created by user on 19/12/2560 BE.
-//  Copyright © 2560 ANT. All rights reserved.
-//
-
 import UIKit
 
 let ins = SettingsViewController()
@@ -50,7 +42,6 @@ class TimerViewController: UIViewController {
     @IBAction func stats(_ sender: Any) {
         
     }
-    
     @IBAction func start(_ sender: Any) {
         if round == true {
             timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(TimerViewController.action), userInfo: nil, repeats: true)
@@ -94,7 +85,6 @@ class TimerViewController: UIViewController {
         lbl.text = stopwatchString
         
     }
-    
     func adviceShow(seconds: Int) -> String{
         if seconds < 3 { advice = "Impossible !!"}
         if seconds >= 3 && seconds <= 5 { advice = "New World Record"}
@@ -139,9 +129,7 @@ class TimerViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let statsController = segue.destination as! StatsViewController
@@ -149,17 +137,5 @@ class TimerViewController: UIViewController {
         statsController.bestTimeString = bestTimeString
         statsController.worstTimeString = worstTimeString
         statsController.bestTimeBegin = bestTimeBegin
-        //timer.invalidate()
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
