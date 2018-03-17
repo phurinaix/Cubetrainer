@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  CubeTrainer
-//
-//  Created by user on 19/12/2560 BE.
-//  Copyright © 2560 ANT. All rights reserved.
-//
-
 import UIKit
 import CoreData
 
@@ -13,7 +5,6 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -88,6 +79,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
 }
-
