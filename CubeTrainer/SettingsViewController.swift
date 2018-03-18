@@ -1,3 +1,4 @@
+//Setting theme (dark theme or white theme)
 import UIKit
 var isOn = true
 
