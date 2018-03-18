@@ -1,3 +1,8 @@
+/* Include
+    -Best time
+    -Worst time
+    -Play time
+*/
 import UIKit
 
 class StatsViewController: UIViewController {
