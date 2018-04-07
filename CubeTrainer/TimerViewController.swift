@@ -3,7 +3,6 @@ import UIKit
 let ins = SettingsViewController()
 class TimerViewController: UIViewController {
 
-    
     @IBOutlet weak var adviceText: UILabel!
     @IBOutlet weak var scrambleText: UILabel!
     @IBOutlet weak var lbl: UILabel!
