@@ -1,7 +1,6 @@
 import UIKit
 
 class NotationViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
