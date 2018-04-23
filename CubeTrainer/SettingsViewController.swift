@@ -7,7 +7,6 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var general: UILabel!
     @IBOutlet weak var switchButton: UISwitch!
     @IBOutlet weak var inspecLbl: UILabel!
-    
     @IBAction func theme(_ sender: UISwitch) {
         UserDefaults.standard.set(sender.isOn, forKey: "switchState")
         
@@ -49,7 +48,6 @@ class SettingsViewController: UIViewController {
             setOff(for: self)
         }
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
