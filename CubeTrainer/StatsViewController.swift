@@ -16,14 +16,12 @@ class StatsViewController: UIViewController {
     var worstTimeString = String()
     var bestTimeBegin = Int()
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         bestTime.text = bestTimeString
         worstTime.text = worstTimeString
         playTime.text = playTimeString
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
