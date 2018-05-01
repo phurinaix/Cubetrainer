@@ -9,7 +9,6 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var inspecLbl: UILabel!
     @IBAction func theme(_ sender: UISwitch) {
         UserDefaults.standard.set(sender.isOn, forKey: "switchState")
-        
         if sender.isOn {
             isOn = true
             setOn(for: self)
