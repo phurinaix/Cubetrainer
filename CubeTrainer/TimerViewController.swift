@@ -2,7 +2,6 @@ import UIKit
 
 let ins = SettingsViewController()
 class TimerViewController: UIViewController {
-
     @IBOutlet weak var adviceText: UILabel!
     @IBOutlet weak var scrambleText: UILabel!
     @IBOutlet weak var lbl: UILabel!
@@ -39,7 +38,6 @@ class TimerViewController: UIViewController {
     var timer = Timer()
     
     @IBAction func stats(_ sender: Any) {
-        
     }
     @IBAction func start(_ sender: Any) {
         if round == true {
