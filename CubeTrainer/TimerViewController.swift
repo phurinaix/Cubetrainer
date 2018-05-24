@@ -127,7 +127,6 @@ class TimerViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let statsController = segue.destination as! StatsViewController
         statsController.playTimeString = String(playTime)
