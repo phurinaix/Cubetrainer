@@ -123,7 +123,6 @@ class TimerViewController: UIViewController {
         scramble(length: length)
         
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
