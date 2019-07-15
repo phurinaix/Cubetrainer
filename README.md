@@ -1,5 +1,5 @@
 # Cubetrainer
-Rubik's cube trainer on IOS application version 1.0.0
+Rubik's cube trainer application on iOS version 1.0.0
 feature includes
 -Timer
 -Tips and tricks
